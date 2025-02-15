@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+</head>
+<body>
+
+  <header class="bg-dark text-white text-center py-5">
+    <h1>Our Delicious Menu</h1>
+  </header>
+
+  <div class="container my-5">
+    <!-- Filtering Menu Categories -->
+    <div class="text-center mb-4">
+      <button class="btn btn-primary" onclick="filterCategory('starters')">Starters</button>
+      <button class="btn btn-primary" onclick="filterCategory('main-course')">Main Course</button>
+      <button class="btn btn-primary" onclick="filterCategory('desserts')">Desserts</button>
+      <button class="btn btn-primary" onclick="filterCategory('all')">Show All</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="row" id="menu-items">
+      <!-- Sample Menu Items (you can add more here) -->
+      <div class="col-md-4 menu-item starters">
+        <div class="card">
+            <img src="starter.jpg" class="card-img-top" alt="Starter 1">
+
+          <div class="card-body">
+            <h5 class="card-title">Spring Rolls</h5>
+            <p class="card-text">Crispy and delicious spring rolls filled with veggies.</p>
+            <p><strong>120</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item starters">
+        <div class="card">
+            <img src="PaneerCrispy.jpg" class="card-img-top" alt="Starter 2">
+          <div class="card-body">
+            <h5 class="card-title">Paneer Crispy</h5>
+            <p class="card-text">Crispy and delicious Paneer Crispy with veggies.</p>
+            <p><strong>150</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item starters">
+        <div class="card">
+            <img src="Vegman.jpg" class="card-img-top" alt="Starter 3">
+          <div class="card-body">
+            <h5 class="card-title">Veg Manchurion</h5>
+            <p class="card-text">Crimy and Testy Gravy Manchurion with fresh Veggies</p>
+            <p><strong>165</strong></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 menu-item main-course">
+        <div class="card">
+          <img src="maincourse1.jpg" class="card-img-top" alt="Main Course 1">
+          <div class="card-body">
+            <h5 class="card-title">Grilled Chicken</h5>
+            <p class="card-text">Juicy grilled chicken served with mashed potatoes.</p>
+            <p><strong>180</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item main-course">
+        <div class="card">
+          <img src="butterchiken.jpg" class="card-img-top" alt="Main Course 1">
+          <div class="card-body">
+            <h5 class="card-title">Butter chicken</h5>
+            <p class="card-text">Juicy butter chicken served with lots of butter.</p>
+            <p><strong>210</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item main-course">
+        <div class="card">
+          <img src="murg.jpg" class="card-img-top" alt="Main Course 1">
+          <div class="card-body">
+            <h5 class="card-title">Murg Musallam</h5>
+            <p class="card-text">Shahi murg with rich gravy</p>
+            <p><strong>250</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item desserts">
+        <div class="card">
+          <img src="desert1.jpg" class="card-img-top" alt="Dessert 1">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Cake</h5>
+            <p class="card-text">Rich and creamy chocolate cake with a decadent frosting.</p>
+            <p><strong>90</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item desserts">
+        <div class="card">
+          <img src="doneats.jpg" class="card-img-top" alt="Dessert 1">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Doneats</h5>
+            <p class="card-text">Rich and creamy chocolate doneats.</p>
+            <p><strong>100</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 menu-item desserts">
+        <div class="card">
+          <img src="hazelnut.jpg" class="card-img-top" alt="Dessert 1">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Hazelnut</h5>
+            <p class="card-text">Rich and creamy chocolate hazelnut with a fresh crem.</p>
+            <p><strong>170</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- More menu items go here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
